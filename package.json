@@ -1,0 +1,20 @@
+{
+  "name": "Form Designer with jQuery",
+  "version": "1.0.0",
+  "description": "Powered by ThoughtWorks School",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tw-online-quiz/form-designer-with-jquery.git"
+  },
+  "author": "ThoughtWorks School",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/tw-online-quiz/form-designer-with-jquery/issues"
+  },
+  "homepage": "https://school.thoughtworks.cn",
+  "devDependencies": {
+    "jquery": "3.2.1",
+    "jquery-ui": "1.12.1",
+    "lodash": "^4.17.4"
+  }
+}

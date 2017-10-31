@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -11,12 +12,29 @@
     <script src="js/main.js"></script>
 
     <title>Form Designer</title>
+    <style type="text/css">
+      body {
+        margin: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      ul li {
+        margin: 5px 0;
+      }
+
+      input[type=text], input[type=date] {
+        width: 150px;
+      }
+    </style>
 </head>
 
 <body>
 <div>
-    <div id="container"></div>
-    <div id="popUp" title="choose format"></div>
+    <div id="container" class="text-center"></div>
+    <div id="popUp" title="Choose Type"></div>
 </div>
 
 <script id="formPreview" type="text/html">
@@ -65,10 +83,19 @@
 </script>
 
 <script id="chooseDialog" type="text/html">
-        <input type="radio" name="dialogType" checked value="date">date<br>
-        <input type="radio" name="dialogType" value="text">text<br>
-        <button type="submit" onclick="addItem(this)">submit</button>
+    <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="dialogType" checked value="date">
+            date
+        </label>
+    </div>
+    <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="dialogType" checked value="text">
+            text
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="addItem(this)">submit</button>
 </script>
-
 </html>
 
